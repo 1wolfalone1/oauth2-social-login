@@ -1,0 +1,39 @@
+---
+#ClientID: Iv1.e7e17fe772d6be0b
+#Client Secret: 96be2bfde241aad5ca328c43938f3dcea073b22e
+server:
+  port: 3001
+
+spring:
+  profiles:
+    active: dev
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: Iv1.e7e17fe772d6be0b
+            clientSecret: 75fd316784751fe9017e192abf2d4ba0efec5e02
+          google:
+            clientId: 510262210081-kdgl61gtivc6dumh2irbkhc1nu2sdaac.apps.googleusercontent.com
+            clientSecret: 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
+
+#  datasource:
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    username: sa
+#    url: jdbc:sqlserver://DESKTOP-DMRNDGC\NNHATTHIEN;databaseName=jwt_security;encrypt=true;trustServerCertificate=true;
+#    password: '12345'
+#  jpa:
+#    hibernate:
+#      dialect: org.hibernate.dialect.SQLServer2016Dialect
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        format_sql: 'true'
+#    show-sql: 'true'
